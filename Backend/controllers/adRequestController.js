@@ -7,8 +7,8 @@ exports.handleAdRequest = async (req, res) => {
   const dsps = await DSP.find();
 
   const bids = dsps.map(dsp => {
-    const matchGeo = dsp.targeting.geo === geo;
-    const matchDevice = dsp.targeting.device === device;
+    const matchGeo = dsp.targeting.geo.toUpperCase() === geo.toUpperCase();
+    const matchDevice = dsp.targeting.device.toUpperCase() === device.toUpperCase();    
     if (matchGeo && matchDevice) {
       return {
         dsp_id: dsp.name,

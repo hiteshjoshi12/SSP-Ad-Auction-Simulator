@@ -14,7 +14,7 @@ const AdRequestSchema = new mongoose.Schema(
       click_url: String,
     },
   },
-  { timestamps: true }
+  { timestamps: true }  
 );
 
 module.exports = mongoose.model("AdRequest", AdRequestSchema);

@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const DSPSchema = new mongoose.Schema({
   publisher_id: String,
@@ -16,7 +16,7 @@ const DSPSchema = new mongoose.Schema({
   creative: {
     image_url: String,
     click_url: String,
-  },
+  }
 });
 
-module.exports = mongoose.model("DSP", DSPSchema);
+module.exports = mongoose.model('DSP', DSPSchema);
