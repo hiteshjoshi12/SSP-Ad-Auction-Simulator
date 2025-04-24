@@ -2,7 +2,7 @@ const express = require("express");
 require('dotenv').config();
 const app = express();
 const adRequestRoutes = require("./routes/adRequestRoutes");
-const adminRoutes = require('./routes/admin');
+const adminRoutes = require('./routes/adminRoutes');
 
 const cors = require("cors");
 const connectDB = require('./database/config');
