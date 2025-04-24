@@ -161,6 +161,10 @@ This project is a Supply Side Platform (SSP) simulation built with a React front
 
 ## Screenshots of the Dashboard
 
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
 
 
 
