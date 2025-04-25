@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const BASE = axios.create({
-  baseURL: 'http://localhost:5000', 
+  baseURL: 'https://ssp-ad-auction-simulator.vercel.app/', 
 });
 
 export default BASE;

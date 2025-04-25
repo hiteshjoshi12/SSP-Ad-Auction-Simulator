@@ -18,7 +18,7 @@ const AdRequestForm = ({ isOpen, closeModal }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/ad-request", formData);
+      const res = await axios.post("https://ssp-ad-auction-simulator.vercel.app/ad-request", formData);
       console.log("erroe res",res)
       if (res.data.winner_dsp && res.data.bid_price) {
         toast.success(`Winner: ${res.data.winner_dsp} | Bid: $${res.data.bid_price}`);
